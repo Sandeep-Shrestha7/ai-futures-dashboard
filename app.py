@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from html import escape
 from zoneinfo import ZoneInfo
 import numpy as np, pandas as pd, plotly.graph_objects as go, streamlit as st
@@ -769,6 +769,1519 @@ section[data-testid="stSidebar"] div[data-testid="stButton"] > button p{
  .sidebar-brand-subtitle{font-size:.82rem}
 }
 
+
+/* Refined left-panel alignment */
+section[data-testid="stSidebar"]{
+    background:
+      radial-gradient(circle at 18% 8%, rgba(16,98,165,.12), transparent 30%),
+      linear-gradient(180deg,#06111d 0%,#08131f 52%,#06101b 100%) !important;
+    border-right:1px solid #12283d !important;
+}
+
+section[data-testid="stSidebar"] > div:first-child{
+    padding-top:.85rem !important;
+    padding-left:.7rem !important;
+    padding-right:.7rem !important;
+}
+
+.sidebar-brand{
+    display:flex !important;
+    align-items:center !important;
+    gap:.72rem !important;
+    padding:.35rem .45rem 1rem !important;
+    margin:0 0 .2rem 0 !important;
+}
+
+.sidebar-brand-icon{
+    width:44px !important;
+    min-width:44px !important;
+    height:44px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border:1px solid #1d9dff !important;
+    border-radius:11px !important;
+    background:linear-gradient(180deg,#081b2d,#071522) !important;
+    box-shadow:0 0 18px rgba(0,146,255,.12) !important;
+    font-size:1.45rem !important;
+    line-height:1 !important;
+}
+
+.sidebar-brand-title{
+    color:#f5f8fb !important;
+    font-size:1rem !important;
+    font-weight:800 !important;
+    letter-spacing:.02em !important;
+    line-height:1.05 !important;
+    margin:0 !important;
+}
+
+.sidebar-brand-subtitle{
+    margin-top:.22rem !important;
+    color:#1399ff !important;
+    font-size:.82rem !important;
+    font-weight:700 !important;
+    letter-spacing:.04em !important;
+    line-height:1.1 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"]{
+    margin:.11rem 0 !important;
+    width:100% !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button{
+    width:100% !important;
+    min-height:46px !important;
+    height:46px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    text-align:left !important;
+    padding:.62rem .78rem !important;
+    border-radius:9px !important;
+    border:1px solid transparent !important;
+    background:transparent !important;
+    color:#aeb9c8 !important;
+    font-size:.92rem !important;
+    font-weight:560 !important;
+    line-height:1 !important;
+    transition:all .16s ease !important;
+    box-shadow:none !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover{
+    color:#f5f8fb !important;
+    background:#0b1d2d !important;
+    border-color:#173a58 !important;
+    transform:translateX(1px) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button[kind="primary"]{
+    color:#f7fbff !important;
+    background:linear-gradient(180deg,#12345b 0%,#0f2948 100%) !important;
+    border-color:#145f9c !important;
+    border-left:3px solid #17a6ff !important;
+    box-shadow:inset 0 0 18px rgba(28,128,217,.10),0 4px 12px rgba(0,0,0,.16) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button p{
+    margin:0 !important;
+    padding:0 !important;
+    width:100% !important;
+    display:block !important;
+    text-align:left !important;
+    font-size:.92rem !important;
+    line-height:1.05 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+}
+
+
+/* Professional grouped sidebar */
+section[data-testid="stSidebar"]{
+    background:
+      radial-gradient(circle at 16% 5%,rgba(21,112,186,.13),transparent 29%),
+      linear-gradient(180deg,#06111d 0%,#08131f 50%,#06101b 100%) !important;
+    border-right:1px solid #12283d !important;
+}
+
+section[data-testid="stSidebar"] > div:first-child{
+    padding-top:.8rem !important;
+    padding-left:.72rem !important;
+    padding-right:.72rem !important;
+}
+
+.sidebar-brand{
+    display:flex !important;
+    align-items:center !important;
+    gap:.7rem !important;
+    padding:.35rem .42rem .95rem !important;
+    margin:0 0 .25rem 0 !important;
+}
+
+.sidebar-brand-icon{
+    width:42px !important;
+    min-width:42px !important;
+    height:42px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    border:1px solid #148de0 !important;
+    border-radius:10px !important;
+    background:linear-gradient(180deg,#0a1b2b,#071521) !important;
+    color:#1da1ff !important;
+    box-shadow:0 0 16px rgba(0,146,255,.10) !important;
+    font-size:1.18rem !important;
+    line-height:1 !important;
+}
+
+.sidebar-brand-title{
+    color:#f7f9fc !important;
+    font-size:.98rem !important;
+    font-weight:800 !important;
+    letter-spacing:.025em !important;
+    line-height:1.05 !important;
+}
+
+.sidebar-brand-subtitle{
+    margin-top:.18rem !important;
+    color:#169bff !important;
+    font-size:.76rem !important;
+    font-weight:700 !important;
+    letter-spacing:.08em !important;
+    line-height:1.1 !important;
+}
+
+.sidebar-group-label{
+    margin:.82rem .68rem .28rem !important;
+    color:#60758a !important;
+    font-size:.64rem !important;
+    font-weight:800 !important;
+    letter-spacing:.13em !important;
+    line-height:1 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"]{
+    width:100% !important;
+    margin:.08rem 0 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button{
+    width:100% !important;
+    min-height:43px !important;
+    height:43px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    text-align:left !important;
+    padding:.58rem .78rem !important;
+    border-radius:8px !important;
+    border:1px solid transparent !important;
+    background:transparent !important;
+    color:#9eabba !important;
+    font-size:.86rem !important;
+    font-weight:560 !important;
+    line-height:1 !important;
+    box-shadow:none !important;
+    transition:
+      background .15s ease,
+      border-color .15s ease,
+      color .15s ease,
+      transform .15s ease !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover{
+    color:#edf5fc !important;
+    background:#0b1b2a !important;
+    border-color:#17344d !important;
+    transform:translateX(1px) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button[kind="primary"]{
+    color:#f6fbff !important;
+    background:linear-gradient(180deg,#102d4e 0%,#0d2744 100%) !important;
+    border-color:#145d98 !important;
+    border-left:3px solid #1da1ff !important;
+    box-shadow:
+      inset 0 0 16px rgba(29,161,255,.08),
+      0 3px 10px rgba(0,0,0,.14) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stButton"] > button p{
+    margin:0 !important;
+    padding:0 !important;
+    width:100% !important;
+    display:block !important;
+    text-align:left !important;
+    font-size:.86rem !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+}
+
+@media(max-width:900px){
+    section[data-testid="stSidebar"]{
+        min-width:236px !important;
+        max-width:236px !important;
+    }
+}
+
+
+
+
+
+/* Unified professional top-row cards */
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker),
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.news-card-marker){
+ height:350px!important;
+ min-height:350px!important;
+ max-height:350px!important;
+ overflow:hidden!important;
+ border:1px solid #263b52!important;
+ border-radius:9px!important;
+ background:#091522!important;
+ box-shadow:none!important;
+ container-type:inline-size;
+}
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker)>div,
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.news-card-marker)>div{
+ height:100%!important;
+ padding:0!important;
+ gap:0!important;
+}
+div[data-testid="stElementContainer"]:has(.calendar-card-marker),
+div[data-testid="stElementContainer"]:has(.news-card-marker){
+ display:none!important;
+}
+
+.top-card-header{
+ min-height:43px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:10px;
+ padding:0 12px;
+ border-bottom:1px solid #263b52;
+ background:#0b1826;
+ box-sizing:border-box;
+}
+.top-card-title{
+ color:#edf4fb;
+ font-size:.76rem;
+ font-weight:800;
+ letter-spacing:.025em;
+ white-space:nowrap;
+}
+.top-card-subtitle{
+ color:#8195a9;
+ font-size:.61rem;
+ font-weight:650;
+ white-space:nowrap;
+}
+
+/* Calendar */
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker)
+ div[data-testid="stHorizontalBlock"]{
+ min-height:43px!important;
+ margin:0!important;
+ padding:0 9px 0 12px!important;
+ align-items:center!important;
+ border-bottom:1px solid #263b52!important;
+ background:#0b1826!important;
+ box-sizing:border-box!important;
+}
+.calendar-title-line{
+ display:flex;
+ align-items:center;
+ gap:11px;
+ min-width:0;
+}
+.calendar-compact-date{
+ color:#8195a9;
+ font-size:.61rem;
+ font-weight:650;
+ white-space:nowrap;
+}
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker)
+ div[data-testid="stButton"]{
+ margin:0!important;
+}
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker)
+ button{
+ width:23px!important;
+ min-width:23px!important;
+ max-width:23px!important;
+ height:23px!important;
+ min-height:23px!important;
+ padding:0!important;
+ border:1px solid #2a465e!important;
+ border-radius:6px!important;
+ background:#102131!important;
+ color:#9fb0c0!important;
+ box-shadow:none!important;
+ font-size:.56rem!important;
+ line-height:1!important;
+}
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker)
+ button:hover{
+ border-color:#1785ca!important;
+ background:#123049!important;
+ color:#fff!important;
+}
+.calendar-card-body{
+ height:306px;
+ display:flex;
+ flex-direction:column;
+ min-height:0;
+}
+.calendar-grid{
+ display:grid;
+ grid-template-columns:66px minmax(120px,1fr) 67px 72px 72px 66px;
+ gap:7px;
+ align-items:center;
+ padding:0 9px;
+ box-sizing:border-box;
+ min-width:0;
+}
+.calendar-column-head{
+ flex:0 0 31px;
+ color:#7591aa;
+ border-bottom:1px solid #263b52;
+ background:#0b1826;
+ font-size:.52rem;
+ font-weight:800;
+ letter-spacing:.03em;
+}
+.calendar-event-scroll{
+ flex:1 1 auto;
+ min-height:0;
+ overflow-y:auto;
+ overflow-x:hidden;
+ scrollbar-width:thin;
+ scrollbar-color:#3d5871 #0b1826;
+}
+.calendar-event-row{
+ min-height:44px;
+ border-bottom:1px solid #1a2a3b;
+ font-size:.61rem;
+}
+.calendar-event-row:hover{background:#0e2031}
+.calendar-time{
+ color:#dce7f0;
+ white-space:nowrap;
+ font-weight:700;
+ font-variant-numeric:tabular-nums;
+}
+.calendar-event-name{
+ color:#edf3f8;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+ font-weight:600;
+}
+.calendar-number{
+ color:#afbecc;
+ text-align:right;
+ white-space:nowrap;
+ font-variant-numeric:tabular-nums;
+}
+.calendar-empty{
+ height:190px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:15px;
+ color:#7d90a3;
+ text-align:center;
+ font-size:.67rem;
+}
+
+/* News */
+.top-news-status{
+ min-height:40px;
+ padding:8px 12px;
+ color:#7294b0;
+ border-bottom:1px solid #263b52;
+ background:#0e1c2b;
+ font-size:.59rem;
+ line-height:1.45;
+ box-sizing:border-box;
+ overflow:hidden;
+}
+.top-news-scroll{
+ height:266px;
+ overflow-y:auto;
+ scrollbar-width:thin;
+ scrollbar-color:#3d5871 #0b1826;
+}
+.top-news-row{
+ min-height:66px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:10px;
+ padding:9px 12px;
+ border-bottom:1px solid #1a2a3b;
+ box-sizing:border-box;
+}
+.top-news-row:hover{background:#0e2031}
+.top-news-copy{min-width:0}
+.top-news-title{
+ color:#edf3f8;
+ font-size:.69rem;
+ line-height:1.35;
+ overflow:hidden;
+ display:-webkit-box;
+ -webkit-line-clamp:2;
+ -webkit-box-orient:vertical;
+}
+.top-news-title a{color:#edf3f8!important;text-decoration:none!important}
+.top-news-meta{
+ margin-top:4px;
+ color:#708ba3;
+ font-size:.57rem;
+ white-space:nowrap;
+ overflow:hidden;
+ text-overflow:ellipsis;
+}
+
+/* Keep both cards aligned with neighboring dashboard cards */
+div[data-testid="stHorizontalBlock"]:has(.calendar-card-marker):has(.news-card-marker){
+ align-items:stretch!important;
+}
+
+/* In narrow calendar cards, keep only the useful columns. */
+@container (max-width:520px){
+ .calendar-grid{
+  grid-template-columns:66px minmax(120px,1fr) 67px;
+  gap:7px;
+ }
+ .extra-calendar-col{display:none!important}
+}
+@container (max-width:360px){
+ .calendar-title-line{gap:6px}
+ .top-card-title{font-size:.68rem}
+ .calendar-compact-date{font-size:.55rem}
+ .calendar-grid{
+  grid-template-columns:60px minmax(100px,1fr) 62px;
+  padding:0 7px;
+  gap:5px;
+ }
+}
+
+
+/* TradingView + AI Morning Brief alignment */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+ align-items:stretch!important;
+ gap:10px!important;
+ margin-top:0!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]{
+ display:flex!important;
+ flex-direction:column!important;
+ min-width:0!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"] > div[data-testid="stVerticalBlock"]{
+ flex:1 1 auto!important;
+ gap:0!important;
+}
+
+/* Match the brief to the chart column, including the chart toolbar/select row. */
+div[data-testid="stElementContainer"]:has(.ai-morning-brief){
+ flex:1 1 auto!important;
+ height:100%!important;
+ margin:0!important;
+}
+.ai-morning-brief{
+ height:calc(min(42vh,430px) + 55px)!important;
+ min-height:calc(min(42vh,430px) + 55px)!important;
+ max-height:calc(min(42vh,430px) + 55px)!important;
+ margin:0!important;
+ padding:13px 14px!important;
+ overflow:hidden!important;
+ box-sizing:border-box!important;
+}
+
+/* Use the extra height naturally instead of leaving a large blank lower area. */
+.ai-brief-summary{
+ margin-bottom:12px!important;
+}
+.ai-brief-signals{
+ margin-bottom:12px!important;
+}
+.ai-levels-grid{
+ min-height:145px!important;
+ align-content:start!important;
+}
+
+/* Ensure the chart column has no accidental lower/upper offset. */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ iframe{
+ margin:0!important;
+ display:block!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ div[data-testid="stSelectbox"]{
+ margin-top:0!important;
+ margin-bottom:8px!important;
+}
+
+/* Laptop sizing */
+@media (max-width:1400px){
+ .ai-morning-brief{
+  height:445px!important;
+  min-height:445px!important;
+  max-height:445px!important;
+ }
+}
+
+/* Tablet/mobile: allow natural stacking and height. */
+@media (max-width:980px){
+ div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+  gap:9px!important;
+ }
+ .ai-morning-brief{
+  height:auto!important;
+  min-height:390px!important;
+  max-height:none!important;
+ }
+}
+
+
+/* AI Morning Brief overflow correction */
+.ai-morning-brief{
+ width:100%!important;
+ max-width:100%!important;
+ height:auto!important;
+ min-height:355px!important;
+ max-height:none!important;
+ margin:0!important;
+ padding:12px 13px!important;
+ overflow:hidden!important;
+ box-sizing:border-box!important;
+}
+
+/* Prevent the brief from forcing its Streamlit column wider than the grid. */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]{
+ min-width:0!important;
+ overflow:hidden!important;
+}
+div[data-testid="stElementContainer"]:has(.ai-morning-brief){
+ width:100%!important;
+ max-width:100%!important;
+ min-width:0!important;
+ overflow:hidden!important;
+}
+
+/* Keep all internal rows contained in the card. */
+.ai-morning-brief *,
+.ai-brief-signals,
+.ai-levels-grid{
+ max-width:100%!important;
+ box-sizing:border-box!important;
+}
+.ai-brief-signals{
+ display:grid!important;
+ grid-template-columns:repeat(4,minmax(0,1fr))!important;
+ gap:7px!important;
+}
+.ai-brief-signals > *{
+ min-width:0!important;
+ overflow:hidden!important;
+}
+.ai-levels-grid{
+ display:grid!important;
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:12px!important;
+ min-width:0!important;
+}
+
+/* Let long text wrap instead of increasing card width. */
+.ai-morning-brief p,
+.ai-morning-brief div,
+.ai-morning-brief span{
+ overflow-wrap:anywhere;
+}
+.ai-morning-brief .metric-value,
+.ai-morning-brief .level-value{
+ white-space:nowrap!important;
+ overflow:hidden!important;
+ text-overflow:ellipsis!important;
+}
+
+/* Responsive signal cards */
+@media(max-width:1180px){
+ .ai-brief-signals{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ }
+ .ai-morning-brief{
+  min-height:390px!important;
+ }
+}
+@media(max-width:760px){
+ .ai-brief-signals,
+ .ai-levels-grid{
+  grid-template-columns:1fr!important;
+ }
+ .ai-morning-brief{
+  min-height:0!important;
+ }
+}
+
+
+/* Consistent dashboard spacing system */
+:root{
+ --dashboard-gap:12px;
+ --card-padding:14px;
+ --card-radius:8px;
+}
+
+/* KPI row spacing */
+div[data-testid="stHorizontalBlock"]:has(.ai-market-score-marker),
+div[data-testid="stHorizontalBlock"]:has(.market-overview-card-marker){
+ gap:var(--dashboard-gap)!important;
+ margin-bottom:var(--dashboard-gap)!important;
+ align-items:stretch!important;
+}
+
+/* Keep KPI cards visually consistent */
+div[data-testid="stHorizontalBlock"]:has(.ai-market-score-marker)
+ > div[data-testid="stColumn"],
+div[data-testid="stHorizontalBlock"]:has(.market-overview-card-marker)
+ > div[data-testid="stColumn"]{
+ min-width:0!important;
+}
+
+/* Chart + Morning Brief row */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+ gap:var(--dashboard-gap)!important;
+ margin-top:0!important;
+ margin-bottom:var(--dashboard-gap)!important;
+ align-items:stretch!important;
+}
+
+/* Make both columns start and end on the same grid */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]{
+ display:flex!important;
+ flex-direction:column!important;
+ min-width:0!important;
+ align-self:stretch!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"] > div[data-testid="stVerticalBlock"]{
+ flex:1 1 auto!important;
+ min-height:100%!important;
+ gap:0!important;
+}
+
+/* Hybrid chart card */
+.hybrid-chart-card,
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.hybrid-chart-marker){
+ margin:0!important;
+ border-radius:var(--card-radius)!important;
+ box-sizing:border-box!important;
+}
+
+/* Keep chart title and controls visually connected */
+div[data-testid="stHorizontalBlock"]:has(.hybrid-chart-marker){
+ gap:10px!important;
+ align-items:center!important;
+ margin-bottom:8px!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.hybrid-chart-marker)
+ div[data-testid="stSelectbox"]{
+ margin:0!important;
+}
+
+/* AI Morning Brief */
+.ai-morning-brief{
+ margin:0!important;
+ padding:var(--card-padding)!important;
+ border-radius:var(--card-radius)!important;
+ min-height:345px!important;
+ height:auto!important;
+ max-height:none!important;
+ box-sizing:border-box!important;
+ overflow:hidden!important;
+}
+.ai-morning-brief .ai-brief-summary{
+ margin-bottom:10px!important;
+}
+.ai-morning-brief .ai-brief-signals{
+ margin-top:10px!important;
+ margin-bottom:12px!important;
+ gap:8px!important;
+}
+.ai-morning-brief .ai-levels-grid{
+ margin-top:8px!important;
+ gap:12px!important;
+ min-height:0!important;
+}
+
+/* Uniform card interior spacing */
+.ai-morning-brief,
+.hybrid-chart-card,
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.ai-market-score-marker),
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.market-overview-card-marker){
+ box-sizing:border-box!important;
+}
+
+/* Prevent unintended extra whitespace above/below card rows */
+div[data-testid="stElementContainer"]:has(.ai-morning-brief),
+div[data-testid="stElementContainer"]:has(.hybrid-chart-marker){
+ margin-top:0!important;
+ margin-bottom:0!important;
+ padding-top:0!important;
+ padding-bottom:0!important;
+}
+
+/* Laptop */
+@media(max-width:1400px){
+ :root{--dashboard-gap:10px;--card-padding:12px}
+ .ai-morning-brief{min-height:335px!important}
+}
+
+/* Tablet/mobile */
+@media(max-width:980px){
+ div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+  gap:10px!important;
+ }
+ .ai-morning-brief{
+  min-height:0!important;
+ }
+}
+
+
+/* Final top-cards to AI Morning Brief spacing fix */
+
+/* Keep one consistent 12px gap below the KPI row */
+div[data-testid="stHorizontalBlock"]:has(.ai-market-score-marker),
+div[data-testid="stHorizontalBlock"]:has(.market-overview-card-marker){
+ margin-bottom:12px!important;
+}
+
+/* Remove extra top spacing from the chart / brief row */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+ margin-top:0!important;
+ padding-top:0!important;
+ gap:12px!important;
+ align-items:stretch!important;
+}
+
+/* Force both columns to begin at the same top edge */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]{
+ display:flex!important;
+ flex-direction:column!important;
+ justify-content:flex-start!important;
+ align-self:stretch!important;
+ min-width:0!important;
+ margin-top:0!important;
+ padding-top:0!important;
+}
+
+/* Remove Streamlit spacing above the AI Morning Brief */
+div[data-testid="stElementContainer"]:has(.ai-morning-brief),
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.ai-morning-brief){
+ margin-top:0!important;
+ padding-top:0!important;
+}
+
+/* Keep the Morning Brief card flush with the chart card */
+.ai-morning-brief{
+ margin-top:0!important;
+ width:100%!important;
+ max-width:100%!important;
+ box-sizing:border-box!important;
+}
+
+/* Remove hidden/empty spacer blocks immediately above the second row */
+div[data-testid="stElementContainer"]:empty{
+ min-height:0!important;
+}
+
+/* Maintain compact spacing on smaller screens */
+@media(max-width:1400px){
+ div[data-testid="stHorizontalBlock"]:has(.ai-market-score-marker),
+ div[data-testid="stHorizontalBlock"]:has(.market-overview-card-marker){
+  margin-bottom:10px!important;
+ }
+ div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+  gap:10px!important;
+ }
+}
+
+
+/* Extra separation between top KPI cards and the chart / AI Morning Brief row */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief){
+    margin-top:14px !important;
+}
+
+
+/* =========================================================
+   Match Risk Manager + Performance Overview to top-row cards
+   ========================================================= */
+
+:root{
+  --terminal-card-bg:#0f1724;
+  --terminal-card-border:#263449;
+  --terminal-card-radius:10px;
+  --terminal-card-header-bg:#111c2c;
+  --terminal-card-header-height:42px;
+  --terminal-card-padding:14px;
+  --terminal-card-gap:12px;
+}
+
+/* Shared outer card treatment */
+.risk-manager-card,
+.performance-overview-card{
+  background:var(--terminal-card-bg)!important;
+  border:1px solid var(--terminal-card-border)!important;
+  border-radius:var(--terminal-card-radius)!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+  width:100%!important;
+  margin:0!important;
+}
+
+/* Shared compact header */
+.risk-manager-card .card-header,
+.performance-overview-card .card-header,
+.risk-manager-card .risk-header,
+.performance-overview-card .performance-header{
+  min-height:var(--terminal-card-header-height)!important;
+  padding:0 14px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  background:var(--terminal-card-header-bg)!important;
+  border-bottom:1px solid var(--terminal-card-border)!important;
+  box-sizing:border-box!important;
+}
+
+/* Header typography */
+.risk-manager-card .card-header h1,
+.risk-manager-card .card-header h2,
+.risk-manager-card .card-header h3,
+.risk-manager-card .risk-header h1,
+.risk-manager-card .risk-header h2,
+.risk-manager-card .risk-header h3,
+.performance-overview-card .card-header h1,
+.performance-overview-card .card-header h2,
+.performance-overview-card .card-header h3,
+.performance-overview-card .performance-header h1,
+.performance-overview-card .performance-header h2,
+.performance-overview-card .performance-header h3{
+  margin:0!important;
+  font-size:13px!important;
+  font-weight:700!important;
+  letter-spacing:.04em!important;
+  line-height:1!important;
+  text-transform:uppercase!important;
+}
+
+/* Shared body spacing */
+.risk-manager-card .card-body,
+.performance-overview-card .card-body,
+.risk-manager-card .risk-body,
+.performance-overview-card .performance-body{
+  padding:var(--terminal-card-padding)!important;
+  box-sizing:border-box!important;
+}
+
+/* Match row spacing with Economic Calendar / Headlines row */
+div[data-testid="stHorizontalBlock"]:has(.risk-manager-card),
+div[data-testid="stHorizontalBlock"]:has(.performance-overview-card){
+  gap:var(--terminal-card-gap)!important;
+  align-items:stretch!important;
+  margin-top:0!important;
+  margin-bottom:var(--terminal-card-gap)!important;
+}
+
+/* Make both cards equal height within their row */
+div[data-testid="stHorizontalBlock"]:has(.risk-manager-card)
+ > div[data-testid="stColumn"],
+div[data-testid="stHorizontalBlock"]:has(.performance-overview-card)
+ > div[data-testid="stColumn"]{
+  display:flex!important;
+  flex-direction:column!important;
+  align-self:stretch!important;
+  min-width:0!important;
+}
+
+div[data-testid="stHorizontalBlock"]:has(.risk-manager-card)
+ > div[data-testid="stColumn"] > div[data-testid="stVerticalBlock"],
+div[data-testid="stHorizontalBlock"]:has(.performance-overview-card)
+ > div[data-testid="stColumn"] > div[data-testid="stVerticalBlock"]{
+  flex:1 1 auto!important;
+}
+
+/* If these cards are inside Streamlit bordered wrappers, match the same style */
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.risk-manager-card),
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.performance-overview-card){
+  background:var(--terminal-card-bg)!important;
+  border:1px solid var(--terminal-card-border)!important;
+  border-radius:var(--terminal-card-radius)!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+/* Compact controls inside both cards */
+.risk-manager-card div[data-testid="stNumberInput"],
+.risk-manager-card div[data-testid="stSelectbox"],
+.risk-manager-card div[data-testid="stTextInput"],
+.performance-overview-card div[data-testid="stNumberInput"],
+.performance-overview-card div[data-testid="stSelectbox"],
+.performance-overview-card div[data-testid="stTextInput"]{
+  margin-bottom:8px!important;
+}
+
+/* Responsive consistency */
+@media(max-width:1400px){
+  :root{
+    --terminal-card-padding:12px;
+    --terminal-card-gap:10px;
+  }
+}
+
+
+/* =========================================================
+   FINAL: Unified Economic, News, Risk and Performance cards
+   ========================================================= */
+.dashboard-unified-card{
+ height:390px!important;
+ min-height:390px!important;
+ max-height:390px!important;
+ width:100%!important;
+ margin:0!important;
+ padding:0!important;
+ display:flex!important;
+ flex-direction:column!important;
+ background:linear-gradient(180deg,#0d1b2a 0%,#091522 100%)!important;
+ border:1px solid #263b52!important;
+ border-radius:10px!important;
+ overflow:hidden!important;
+ box-sizing:border-box!important;
+ box-shadow:none!important;
+ color:#eaf2f9!important;
+}
+
+.dashboard-unified-card .unified-card-header{
+ height:54px!important;
+ min-height:54px!important;
+ padding:0 14px!important;
+ margin:0!important;
+ display:flex!important;
+ align-items:center!important;
+ justify-content:space-between!important;
+ gap:10px!important;
+ background:#0c1a29!important;
+ border-bottom:1px solid #263b52!important;
+ box-sizing:border-box!important;
+}
+
+.dashboard-unified-card .top-card-title{
+ margin:0!important;
+ font-size:.72rem!important;
+ font-weight:900!important;
+ letter-spacing:.015em!important;
+ line-height:1.1!important;
+ color:#f2f7fb!important;
+ white-space:nowrap!important;
+}
+
+.dashboard-unified-card .top-card-subtitle{
+ margin:0!important;
+ font-size:.52rem!important;
+ color:#79a6ca!important;
+ white-space:nowrap!important;
+ overflow:hidden!important;
+ text-overflow:ellipsis!important;
+}
+
+.dashboard-unified-card .unified-card-body{
+ flex:1 1 auto!important;
+ min-height:0!important;
+ padding:13px 14px!important;
+ box-sizing:border-box!important;
+ overflow:hidden!important;
+}
+
+/* Risk Manager */
+.risk-card-body{
+ display:flex!important;
+ flex-direction:column!important;
+ gap:0!important;
+}
+.risk-stat{
+ padding:7px 0 9px!important;
+ border-bottom:1px solid #1b2d40!important;
+}
+.risk-label{
+ display:block!important;
+ margin-bottom:4px!important;
+ font-size:.61rem!important;
+ color:#88a0b5!important;
+}
+.risk-value{
+ display:block!important;
+ font-size:.88rem!important;
+ line-height:1.15!important;
+ color:#f0f6fb!important;
+}
+.risk-value.positive{color:#31e67c!important}
+.risk-value.negative{color:#ff5964!important}
+.unified-section-divider{
+ margin:10px 0 9px!important;
+ border-top:1px solid #263b52!important;
+}
+.unified-section-title{
+ margin-bottom:8px!important;
+ font-size:.62rem!important;
+ font-weight:900!important;
+ color:#eaf2f9!important;
+ letter-spacing:.03em!important;
+}
+.risk-mini-grid{
+ display:grid!important;
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:8px 12px!important;
+}
+.risk-mini-grid div{
+ min-width:0!important;
+ padding:6px 0!important;
+ border-bottom:1px solid #17283a!important;
+}
+.risk-mini-grid span{
+ display:block!important;
+ margin-bottom:3px!important;
+ font-size:.54rem!important;
+ color:#8196aa!important;
+}
+.risk-mini-grid strong{
+ display:block!important;
+ font-size:.66rem!important;
+ color:#ecf4fa!important;
+}
+
+/* Performance Overview */
+.performance-card-body{
+ display:flex!important;
+ flex-direction:column!important;
+}
+.performance-overview-card .performance-kpis{
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:0 14px!important;
+ margin:0 0 10px!important;
+}
+.performance-overview-card .performance-kpi{
+ min-height:33px!important;
+ padding:7px 0!important;
+ font-size:.61rem!important;
+ border-bottom:1px solid #1b2d40!important;
+}
+.performance-overview-card .performance-chart{
+ flex:1 1 auto!important;
+ min-height:112px!important;
+ max-height:132px!important;
+ margin:0 0 8px!important;
+ padding:4px 6px!important;
+ border:1px solid #263b52!important;
+ border-radius:7px!important;
+ background:#091725!important;
+ overflow:hidden!important;
+ box-sizing:border-box!important;
+}
+.performance-overview-card .performance-footer{
+ margin-top:auto!important;
+ padding-top:8px!important;
+ border-top:1px solid #1b2d40!important;
+ font-size:.56rem!important;
+}
+
+/* Ensure the four-column row stretches every card equally */
+div[data-testid="stHorizontalBlock"]:has(.bottom-row-anchor){
+ gap:10px!important;
+ align-items:stretch!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.bottom-row-anchor)
+ > div[data-testid="stColumn"]{
+ display:flex!important;
+ flex-direction:column!important;
+ align-self:stretch!important;
+ min-width:0!important;
+}
+div[data-testid="stHorizontalBlock"]:has(.bottom-row-anchor)
+ > div[data-testid="stColumn"] > div[data-testid="stVerticalBlock"]{
+ flex:1 1 auto!important;
+ min-height:390px!important;
+}
+
+/* Calendar and News bordered Streamlit containers remain 390px */
+div[data-testid="stHorizontalBlock"]:has(.bottom-row-anchor)
+ div[data-testid="stVerticalBlockBorderWrapper"]{
+ height:390px!important;
+ min-height:390px!important;
+ max-height:390px!important;
+ border-color:#263b52!important;
+ border-radius:10px!important;
+}
+
+/* Avoid older generic rules shrinking Risk and Performance */
+.panel.dashboard-bottom-card.risk-manager-card,
+.panel.dashboard-bottom-card.performance-overview-card,
+.risk-manager-card.dashboard-bottom-card,
+.performance-overview-card.dashboard-bottom-card{
+ height:390px!important;
+ min-height:390px!important;
+ max-height:390px!important;
+}
+
+
+/* Economic Calendar visibility fix for narrow dashboard card */
+div[data-testid="stVerticalBlockBorderWrapper"]:has(.calendar-card-marker),
+.economic-card,
+.calendar-card-shell,
+.calendar-card-content{
+  container-type:inline-size!important;
+}
+
+.calendar-card-body,
+.calendar-card-content,
+.calendar-event-scroll,
+.calendar-scroll-shell,
+.calendar-body{
+  overflow-x:hidden!important;
+}
+
+.calendar-grid,
+.calendar-row{
+  width:100%!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+
+@container (max-width: 620px){
+  .calendar-grid,
+  .calendar-row{
+    grid-template-columns:64px minmax(0,1fr) 66px!important;
+    gap:7px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+
+  .calendar-grid > :nth-child(n+4),
+  .calendar-row > :nth-child(n+4),
+  .extra-calendar-col{
+    display:none!important;
+  }
+
+  .calendar-event-name{
+    min-width:0!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+  }
+
+  .calendar-time{
+    font-size:.58rem!important;
+  }
+
+  .calendar-event-row{
+    min-height:43px!important;
+  }
+}
+
+@container (max-width: 420px){
+  .calendar-grid,
+  .calendar-row{
+    grid-template-columns:58px minmax(0,1fr) 60px!important;
+    gap:5px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
+  }
+
+  .calendar-event-name{
+    font-size:.57rem!important;
+  }
+
+  .calendar-time{
+    font-size:.54rem!important;
+  }
+}
+
+.calendar-title-line,
+.calendar-inline-header{
+  min-width:0!important;
+}
+
+.calendar-compact-date,
+.calendar-inline-date{
+  flex:0 1 auto!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+
+
+/* Institutional Flow */
+.dark-pool-card{
+ width:100%;
+ margin:12px 0;
+ border:1px solid #263b52;
+ border-radius:10px;
+ overflow:hidden;
+ background:linear-gradient(180deg,#0d1b2a 0%,#091522 100%);
+ box-sizing:border-box;
+}
+.dark-pool-card.dp-compact{height:258px}
+.dark-pool-card.dp-expanded{height:430px}
+.dark-pool-card .top-card-header{
+ min-height:52px;
+ padding:0 14px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px;
+ border-bottom:1px solid #263b52;
+ background:#0c1a29;
+ box-sizing:border-box;
+}
+.dp-source-badge{
+ padding:4px 7px;
+ border:1px solid #755d20;
+ border-radius:5px;
+ background:#2d260f;
+ color:#e6bd4a;
+ font-size:.5rem;
+ font-weight:800;
+ white-space:nowrap;
+}
+.dark-pool-body{
+ height:calc(100% - 52px);
+ display:flex;
+ flex-direction:column;
+ padding:11px 13px;
+ box-sizing:border-box;
+ min-height:0;
+}
+.dp-kpi-grid{
+ display:grid;
+ grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:8px;
+ margin-bottom:10px;
+}
+.dp-kpi{
+ min-width:0;
+ padding:7px 9px;
+ border:1px solid #21394e;
+ border-radius:7px;
+ background:#0a1927;
+}
+.dp-kpi span{
+ display:block;
+ margin-bottom:4px;
+ color:#8197aa;
+ font-size:.54rem;
+}
+.dp-kpi strong{
+ display:block;
+ color:#edf4fa;
+ font-size:.72rem;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ white-space:nowrap;
+}
+.dp-table-head,.dp-print-row{
+ display:grid;
+ grid-template-columns:72px 48px 72px 84px 72px 58px;
+ gap:8px;
+ align-items:center;
+ padding:6px 8px;
+ box-sizing:border-box;
+}
+.dp-table-head{
+ color:#7890a6;
+ border-top:1px solid #21394e;
+ border-bottom:1px solid #21394e;
+ background:#0b1826;
+ font-size:.51rem;
+ font-weight:800;
+ letter-spacing:.03em;
+}
+.dp-print-scroll{
+ flex:1 1 auto;
+ min-height:0;
+ overflow-y:auto;
+ scrollbar-width:thin;
+ scrollbar-color:#3d5871 #0b1826;
+}
+.dp-print-row{
+ min-height:32px;
+ border-bottom:1px solid #172a3b;
+ color:#b8c7d4;
+ font-size:.56rem;
+}
+.dp-print-row strong{color:#eef5fb}
+.dp-disclaimer{
+ margin-top:7px;
+ color:#687f94;
+ font-size:.49rem;
+ line-height:1.35;
+}
+@media(max-width:980px){
+ .dp-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .dark-pool-card.dp-compact{height:auto;min-height:300px}
+}
+@media(max-width:680px){
+ .dp-kpi-grid{grid-template-columns:1fr}
+ .dp-table-head,.dp-print-row{grid-template-columns:66px 42px 62px 72px}
+ .dp-table-head>*:nth-child(n+5),
+ .dp-print-row>*:nth-child(n+5){display:none}
+ .dark-pool-card.dp-expanded{height:auto;min-height:430px}
+}
+
+
+/* Institutional Flow card below AI Morning Brief */
+.dark-pool-card.dp-compact{
+ height:255px!important;
+ min-height:255px!important;
+ max-height:255px!important;
+ margin:0!important;
+}
+.dark-pool-card.dp-compact .dark-pool-body{
+ padding:9px 10px!important;
+}
+.dark-pool-card.dp-compact .dp-kpi-grid{
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:7px!important;
+ margin-bottom:8px!important;
+}
+.dark-pool-card.dp-compact .dp-kpi{
+ padding:6px 7px!important;
+}
+.dark-pool-card.dp-compact .dp-table-head,
+.dark-pool-card.dp-compact .dp-print-row{
+ grid-template-columns:58px 38px 58px 66px!important;
+ gap:6px!important;
+ padding:5px 6px!important;
+}
+.dark-pool-card.dp-compact .dp-table-head>*:nth-child(n+5),
+.dark-pool-card.dp-compact .dp-print-row>*:nth-child(n+5){
+ display:none!important;
+}
+.dark-pool-card.dp-compact .dp-disclaimer{
+ font-size:.46rem!important;
+}
+
+
+/* Final right-column spacing recommendation */
+.dashboard-card-gap{
+ height:8px!important;
+ min-height:8px!important;
+ max-height:8px!important;
+ width:100%!important;
+ margin:0!important;
+ padding:0!important;
+}
+
+.ai-morning-brief{
+ height:auto!important;
+ min-height:300px!important;
+ max-height:none!important;
+ padding:12px 14px 8px 14px!important;
+ margin:0!important;
+ box-sizing:border-box!important;
+}
+
+.ai-morning-brief .ai-brief-signals{
+ margin-bottom:8px!important;
+}
+
+.ai-morning-brief .ai-levels-grid{
+ margin-top:6px!important;
+ gap:8px!important;
+ min-height:0!important;
+}
+
+.ai-morning-brief .ai-levels-title{
+ margin-top:10px!important;
+}
+
+/* Keep Institutional Flow directly below with no extra outer margin */
+.dark-pool-card.dp-compact{
+ margin:0!important;
+}
+
+/* Remove extra Streamlit spacing around the custom gap marker */
+div[data-testid="stElementContainer"]:has(.dashboard-card-gap){
+ height:8px!important;
+ min-height:8px!important;
+ max-height:8px!important;
+ margin:0!important;
+ padding:0!important;
+}
+
+
+/* TRUE fix: prevent right-column cards from stretching apart */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]:has(.ai-morning-brief)
+ > div[data-testid="stVerticalBlock"]{
+ display:flex!important;
+ flex-direction:column!important;
+ justify-content:flex-start!important;
+ align-content:flex-start!important;
+ gap:8px!important;
+ height:auto!important;
+ min-height:0!important;
+}
+
+/* Do not let the Morning Brief Streamlit element absorb chart-column height */
+div[data-testid="stElementContainer"]:has(.ai-morning-brief){
+ flex:0 0 auto!important;
+ height:auto!important;
+ min-height:0!important;
+ max-height:none!important;
+ margin:0!important;
+ padding:0!important;
+}
+
+/* Do not let Institutional Flow absorb remaining height either */
+div[data-testid="stElementContainer"]:has(.dark-pool-card.dp-compact){
+ flex:0 0 auto!important;
+ height:auto!important;
+ min-height:0!important;
+ margin:0!important;
+ padding:0!important;
+}
+
+/* Remove the custom spacer element entirely; vertical-block gap supplies 8px */
+.dashboard-card-gap,
+div[data-testid="stElementContainer"]:has(.dashboard-card-gap){
+ display:none!important;
+ height:0!important;
+ min-height:0!important;
+ max-height:0!important;
+ margin:0!important;
+ padding:0!important;
+}
+
+/* Size cards to content */
+.ai-morning-brief{
+ height:auto!important;
+ min-height:0!important;
+ max-height:none!important;
+ margin:0!important;
+ padding:12px 14px 10px!important;
+}
+
+.dark-pool-card.dp-compact{
+ height:255px!important;
+ min-height:255px!important;
+ max-height:255px!important;
+ margin:0!important;
+}
+
+/* Remove earlier row-stretch behavior specifically from the right column */
+div[data-testid="stHorizontalBlock"]:has(.ai-morning-brief)
+ > div[data-testid="stColumn"]:has(.ai-morning-brief){
+ display:block!important;
+ height:auto!important;
+ min-height:0!important;
+ align-self:flex-start!important;
+}
+
 </style>''',unsafe_allow_html=True)
 @st.cache_data
 def data(n=180):
@@ -778,7 +2291,7 @@ df=data(); markets=[('MES','E-mini S&P 500',5572.75,24.50,.44),('MNQ','E-mini Na
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_calendar(force_refresh=False):
  try:
-  return economic_calendar(force_refresh=force_refresh, country="United States", days=3)
+  return economic_calendar(force_refresh=force_refresh, country="United States", days=14, past_days=7)
  except Exception:
   return []
 
@@ -842,7 +2355,7 @@ with st.sidebar:
  st.markdown(
   """
   <div class="sidebar-brand">
-    <div class="sidebar-brand-icon">🧠</div>
+    <div class="sidebar-brand-icon">◈</div>
     <div>
       <div class="sidebar-brand-title">AI FUTURES</div>
       <div class="sidebar-brand-subtitle">DASHBOARD</div>
@@ -852,32 +2365,43 @@ with st.sidebar:
   unsafe_allow_html=True,
  )
 
- navigation_items=[
-  ("🏠","Dashboard","nav_dashboard"),
-  ("⚙","AI Analysis","nav_ai_analysis"),
-  ("📈","Chart","nav_chart"),
-  ("📅","Economic Calendar","nav_calendar"),
-  ("📰","News & Sentiment","nav_news"),
-  ("🧲","AI Trade Setup","nav_ai_setup"),
-  ("🛡","Risk Manager","nav_risk"),
-  ("📉","Performance","nav_performance"),
-  ("📒","Trade Journal","nav_journal"),
-  ("⚙","Settings","nav_settings"),
+ navigation_groups=[
+  ("OVERVIEW",[
+   ("▦","Dashboard","nav_dashboard"),
+   ("◉","AI Analysis","nav_ai_analysis"),
+   ("⌁","Chart","nav_chart"),
+  ]),
+  ("INTELLIGENCE",[
+   ("◫","Economic Calendar","nav_calendar"),
+   ("◍","News & Sentiment","nav_news"),
+   ("◆","Institutional Flow","nav_dark_pool"),
+   ("✦","AI Trade Setup","nav_ai_setup"),
+  ]),
+  ("TRADING",[
+   ("◇","Risk Manager","nav_risk"),
+   ("▥","Performance","nav_performance"),
+   ("▤","Trade Journal","nav_journal"),
+  ]),
+  ("SYSTEM",[
+   ("⚙","Settings","nav_settings"),
+  ]),
  ]
 
- st.markdown('<div class="sidebar-nav-wrap">',unsafe_allow_html=True)
- for icon,label,key in navigation_items:
-  active=st.session_state.active_page==label
-  button_label=f"{icon}   {label}"
-  if st.button(
-   button_label,
-   key=key,
-   use_container_width=True,
-   type="primary" if active else "secondary",
-  ):
-   st.session_state.active_page=label
-   st.rerun()
- st.markdown('</div>',unsafe_allow_html=True)
+ for group_title,items in navigation_groups:
+  st.markdown(
+   f'<div class="sidebar-group-label">{group_title}</div>',
+   unsafe_allow_html=True,
+  )
+  for icon,label,key in items:
+   active=st.session_state.active_page==label
+   if st.button(
+    f"{icon}  {label}",
+    key=key,
+    use_container_width=True,
+    type="primary" if active else "secondary",
+   ):
+    st.session_state.active_page=label
+    st.rerun()
 
  page=st.session_state.active_page
  news_refresh_seconds=60
@@ -1131,33 +2655,41 @@ def news():
  items=news_live
  if not items:
   items=[{"title":"Add API keys in .env to activate live headlines","sentiment":"Neutral","source":"Setup","provider":"Dashboard","url":"","published_at":""}]
+
  rows=[]
  for item in items[:5]:
   title=escape(item.get("title", ""))[:120]
   source=escape(item.get("source", ""))
   provider=escape(item.get("provider", ""))
   url=item.get("url", "")
-  title_html=f'<a href="{escape(url)}" target="_blank" rel="noopener noreferrer" style="color:#e8eef6;text-decoration:none">{title}</a>' if url else title
+  title_html=f'<a href="{escape(url)}" target="_blank" rel="noopener noreferrer">{title}</a>' if url else title
   sentiment=item.get("sentiment","Neutral")
   tag_class="tag-green" if sentiment=="Bullish" else "tag-red" if sentiment=="Bearish" else "tag-gray"
   stamp=_published_label(item.get("published_at", ""))
-  rows.append(f'<div class="news-row"><span><span>{title_html}</span><br><span class="muted">{source} · {provider} · {stamp}</span></span><span class="tag {tag_class}">{sentiment}</span></div>')
- summary=news_bundle["summary"]
- status=f'Finnhub: {escape(news_bundle["finnhub_status"][:60])} · Alpha Vantage: {escape(news_bundle["alpha_status"][:60])}'
- st.markdown(
-  f'<div class="panel right-news">'
-  f'<div class="panel-title">▤ LIVE HEADLINES & SENTIMENT</div>'
-  f'<div class="muted" style="margin-bottom:7px">'
-  f'Updated {news_bundle["updated_at"]:%I:%M:%S %p} CT · {status}'
-  f'</div>'
-  f'<div class="news-scroll-shell">{"".join(rows)}</div>'
-  f'</div>',
-  unsafe_allow_html=True,
- )
+  rows.append(
+   f'<div class="top-news-row">'
+   f'<div class="top-news-copy"><div class="top-news-title">{title_html}</div>'
+   f'<div class="top-news-meta">{source} · {provider} · {stamp}</div></div>'
+   f'<span class="tag {tag_class}">{sentiment}</span>'
+   f'</div>'
+  )
+
+ status=f'Finnhub: {escape(news_bundle["finnhub_status"][:42])} · Alpha Vantage: {escape(news_bundle["alpha_status"][:42])}'
+
+ with st.container(border=True):
+  st.markdown('<div class="news-card-marker"></div>',unsafe_allow_html=True)
+  st.markdown(
+   f'<div class="top-card-header">'
+   f'<div class="top-card-title">▤ LIVE HEADLINES &amp; SENTIMENT</div>'
+   f'<div class="top-card-subtitle">Updated {news_bundle["updated_at"]:%I:%M %p} CT</div>'
+   f'</div>'
+   f'<div class="top-news-status">{status}</div>'
+   f'<div class="top-news-scroll">{"".join(rows)}</div>',
+   unsafe_allow_html=True,
+  )
+
 
 def cal():
- # Browser timezone is detected once outside the card row so it cannot
- # create extra vertical space inside the Economic Calendar column.
  browser_timezone=st.session_state.get("calendar_browser_timezone_value","America/Chicago")
  if not isinstance(browser_timezone,str) or "/" not in browser_timezone:
   browser_timezone="America/Chicago"
@@ -1168,154 +2700,104 @@ def cal():
   render_tz=ZoneInfo("America/Chicago")
 
  rows_data=[]
- if calendar_live:
-  for item in calendar_live:
-   dt=pd.to_datetime(item.get("Date"),errors="coerce",utc=True)
+ for item in calendar_live or []:
+  dt=pd.to_datetime(item.get("Date"),errors="coerce",utc=True)
+  if pd.isna(dt):
+   continue
 
-   if pd.notna(dt):
-    local_dt=dt.tz_convert(render_tz)
-    date_key=local_dt.strftime("%Y-%m-%d")
-    day_label=local_dt.strftime("%A, %B %d, %Y")
-    time_label=local_dt.strftime("%I:%M %p")
-    sort_dt=local_dt.isoformat()
-   else:
-    date_key="unknown"
-    day_label="Date unavailable"
-    time_label="--"
-    sort_dt=""
+  local_dt=dt.tz_convert(render_tz)
+  importance=int(item.get("Importance") or 1)
+  impact="High" if importance>=3 else "Medium" if importance==2 else "Low"
+  if impact not in ("High","Medium"):
+   continue
 
-   importance=int(item.get("Importance") or 1)
-   impact="High" if importance>=3 else "Medium" if importance==2 else "Low"
+  def display_value(*keys):
+   for key in keys:
+    value=item.get(key)
+    if value not in (None,""):
+     return str(value)
+   return "—"
 
-   if impact not in ("High","Medium"):
-    continue
+  rows_data.append({
+   "date_key":local_dt.strftime("%Y-%m-%d"),
+   "time":local_dt.strftime("%I:%M %p"),
+   "sort_dt":local_dt,
+   "event":item.get("Event") or item.get("Category") or "Event",
+   "impact":impact,
+   "actual":display_value("Actual"),
+   "forecast":display_value("Forecast","Consensus"),
+   "previous":display_value("Previous"),
+  })
 
-   rows_data.append({
-    "date_key":date_key,
-    "day":day_label,
-    "time":time_label,
-    "sort_dt":sort_dt,
-    "event":item.get("Event") or item.get("Category") or "Event",
-    "impact":impact,
-    "actual":item.get("Actual") or "-",
-    "forecast":item.get("Forecast") or item.get("Consensus") or "-",
-    "previous":item.get("Previous") or "-",
-   })
+ rows_data=sorted(rows_data,key=lambda row:row["sort_dt"])
+ today=pd.Timestamp.now(tz=render_tz).normalize()
 
- rows_data=sorted(rows_data,key=lambda row:(row["date_key"],row["sort_dt"]))
+ if "calendar_selected_date" not in st.session_state:
+  st.session_state.calendar_selected_date=today.strftime("%Y-%m-%d")
 
- if not rows_data:
-  st.markdown(
-   '<div class="panel bottom-card dashboard-bottom-card economic-card">'
-   '<div class="panel-title">▣ ECONOMIC CALENDAR</div>'
-   '<div class="muted" style="padding-top:12px">'
-   'No medium- or high-impact events are currently available.'
-   '</div></div>',
-   unsafe_allow_html=True,
-  )
-  return
+ try:
+  selected=pd.Timestamp(st.session_state.calendar_selected_date,tz=render_tz).normalize()
+ except Exception:
+  selected=today
+  st.session_state.calendar_selected_date=today.strftime("%Y-%m-%d")
 
- today_key=pd.Timestamp.now(tz=render_tz).strftime("%Y-%m-%d")
-
- grouped={}
- for row in rows_data:
-  if row["date_key"]>=today_key:
-   grouped.setdefault((row["date_key"],row["day"]),[]).append(row)
-
- date_groups=list(grouped.items())
-
- if not date_groups:
-  st.markdown(
-   '<div class="panel bottom-card dashboard-bottom-card economic-card">'
-   '<div class="panel-title">▣ ECONOMIC CALENDAR</div>'
-   '<div class="muted" style="padding-top:12px">'
-   'No current or upcoming medium- or high-impact events are available.'
-   '</div></div>',
-   unsafe_allow_html=True,
-  )
-  return
-
- total_pages=len(date_groups)
-
- if "calendar_page" not in st.session_state:
-  st.session_state.calendar_page=1
-
- st.session_state.calendar_page=max(
-  1,
-  min(int(st.session_state.calendar_page),total_pages),
- )
-
- current_index=st.session_state.calendar_page-1
- (date_key,day_label),day_rows=date_groups[current_index]
-
- now_local=pd.Timestamp.now(tz=render_tz)
- tomorrow_key=(now_local+pd.Timedelta(days=1)).strftime("%Y-%m-%d")
-
- if date_key==today_key:
-  date_title=f"TODAY · {day_label}"
- elif date_key==tomorrow_key:
-  date_title=f"TOMORROW · {day_label}"
- else:
-  date_title=day_label
-
- high_count=sum(1 for row in day_rows if row["impact"]=="High")
- medium_count=sum(1 for row in day_rows if row["impact"]=="Medium")
+ min_date=today-pd.Timedelta(days=7)
+ max_date=today+pd.Timedelta(days=14)
+ day_rows=[row for row in rows_data if row["date_key"]==selected.strftime("%Y-%m-%d")]
+ compact_date=selected.strftime("%a, %b %d")
 
  event_rows=[]
  for row in day_rows:
   tag_class="tag-red" if row["impact"]=="High" else "tag-amber"
   event_rows.append(
-   f'<div class="calendar-row">'
-   f'<div>{escape(str(row["time"]))}</div>'
-   f'<div title="{escape(str(row["event"]))}">{escape(str(row["event"]))}</div>'
+   f'<div class="calendar-grid calendar-event-row">'
+   f'<div class="calendar-time">{escape(row["time"])}</div>'
+   f'<div class="calendar-event-name" title="{escape(str(row["event"]))}">{escape(str(row["event"]))}</div>'
    f'<div><span class="tag {tag_class}">{escape(row["impact"])}</span></div>'
-   f'<div>{escape(str(row["actual"]))}</div>'
-   f'<div>{escape(str(row["forecast"]))}</div>'
-   f'<div>{escape(str(row["previous"]))}</div>'
+   f'<div class="calendar-number extra-calendar-col">{escape(row["forecast"])}</div>'
+   f'<div class="calendar-number extra-calendar-col">{escape(row["previous"])}</div>'
+   f'<div class="calendar-number extra-calendar-col">{escape(row["actual"])}</div>'
    f'</div>'
   )
 
- st.markdown(
-  f'<div class="panel bottom-card dashboard-bottom-card economic-card">'
-  f'<div class="panel-title">▣ ECONOMIC CALENDAR</div>'
-  f'<div class="calendar-date-bar">'
-  f'📅 {escape(date_title)} &nbsp; '
-  f'<span class="tag tag-red">High {high_count}</span> &nbsp; '
-  f'<span class="tag tag-amber">Medium {medium_count}</span>'
-  f'</div>'
-  f'<div class="calendar-row muted calendar-columns">'
-  f'<div>TIME</div><div>EVENT</div><div>IMPACT</div>'
-  f'<div>ACTUAL</div><div>FORECAST</div><div>PREVIOUS</div>'
-  f'</div>'
-  f'<div class="calendar-scroll-shell">'
-  f'<div class="calendar-body">{"".join(event_rows)}</div>'
-  f'</div>'
-  f'</div>',
-  unsafe_allow_html=True,
- )
+ if not event_rows:
+  event_rows.append('<div class="calendar-empty">No high- or medium-impact events scheduled.</div>')
 
- # Navigation sits visually inside the calendar footer.
- st.markdown('<div class="calendar-nav-row"></div>',unsafe_allow_html=True)
- left,spacer,right=st.columns([1.15,6,1.15])
- with left:
-  if st.button(
-   "‹ Back",
-   key="calendar_back",
-   disabled=st.session_state.calendar_page<=1,
-   use_container_width=True,
-  ):
-   st.session_state.calendar_page-=1
-   st.rerun()
+ with st.container(border=True):
+  st.markdown('<div class="calendar-card-marker"></div>',unsafe_allow_html=True)
 
- with right:
-  if st.button(
-   "Next ›",
-   key="calendar_next",
-   disabled=st.session_state.calendar_page>=total_pages,
-   use_container_width=True,
-  ):
-   st.session_state.calendar_page+=1
-   st.rerun()
+  header_left,prev_col,next_col=st.columns([8.6,.7,.7],vertical_alignment="center")
+  with header_left:
+   st.markdown(
+    f'<div class="calendar-title-line">'
+    f'<span class="top-card-title">▣ ECONOMIC CALENDAR</span>'
+    f'<span class="calendar-compact-date">▦ {escape(compact_date)}</span>'
+    f'</div>',
+    unsafe_allow_html=True,
+   )
+  with prev_col:
+   if st.button("◀",key="calendar_previous_day",help="Previous day",
+                disabled=selected<=min_date,use_container_width=True):
+    st.session_state.calendar_selected_date=(selected-pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    st.rerun()
+  with next_col:
+   if st.button("▶",key="calendar_next_day",help="Next day",
+                disabled=selected>=max_date,use_container_width=True):
+    st.session_state.calendar_selected_date=(selected+pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+    st.rerun()
+
+  st.markdown(
+   f'<div class="calendar-card-body">'
+   f'<div class="calendar-grid calendar-column-head">'
+   f'<div>TIME</div><div>EVENT</div><div>IMPACT</div>'
+   f'<div class="extra-calendar-col">FORECAST</div>'
+   f'<div class="extra-calendar-col">PREVIOUS</div>'
+   f'<div class="extra-calendar-col">ACTUAL</div>'
+   f'</div>'
+   f'<div class="calendar-event-scroll">{"".join(event_rows)}</div>'
+   f'</div>',
+   unsafe_allow_html=True,
+  )
 
 
 def _setup_inputs():
@@ -1451,14 +2933,121 @@ def redesigned_ai_journal_row():
  with right:
   st.markdown(journal_analytics_compact(),unsafe_allow_html=True)
 
+
+def dark_pool_card(expanded=False):
+ symbol=st.session_state.get("chart_symbol","MES")
+ mapping={
+  "MES":("SPY","S&P 500 ETF"),
+  "MNQ":("QQQ","Nasdaq-100 ETF"),
+  "MGC":("GLD","Gold ETF"),
+  "MCL":("USO","Oil ETF"),
+  "VIX":("VXX","Volatility ETN"),
+  "DXY":("UUP","U.S. Dollar ETF"),
+ }
+ etf,description=mapping.get(symbol,("SPY","S&P 500 ETF"))
+
+ close=float(df["close"].iloc[-1])
+ change_8=float(df["close"].pct_change(8).iloc[-1])
+ volatility=float(df["close"].pct_change().tail(30).std())
+ counts=news_bundle["summary"]["counts"]
+ bull_news=int(counts.get("Bullish",0))
+ bear_news=int(counts.get("Bearish",0))
+
+ scales={"SPY":0.102,"QQQ":0.088,"GLD":0.043,"USO":0.014,"VXX":0.003,"UUP":0.0052}
+ etf_price=max(1.0,close*scales[etf])
+ signal=(change_8*820)+(ai_result.score-50)/18+(bull_news-bear_news)*0.18
+ bias="BULLISH" if signal>0.65 else "BEARISH" if signal<-0.65 else "NEUTRAL"
+ bias_class="positive" if bias=="BULLISH" else "negative" if bias=="BEARISH" else "warning"
+
+ dp_pct=min(62.0,max(22.0,34.0+abs(signal)*3.8+volatility*900))
+ total_shares=int(3_800_000+abs(signal)*620_000+volatility*120_000_000)
+ dark_shares=int(total_shares*dp_pct/100)
+ largest_shares=max(25_000,int(dark_shares*(0.045+min(abs(signal),4)*0.006)))
+ largest_value=largest_shares*etf_price
+ net_premium=(dark_shares*etf_price)*(0.08 if bias=="BULLISH" else -0.08 if bias=="BEARISH" else 0.015)
+
+ now=datetime.now(CT)
+ offsets=[4,11,19,31,44]
+ multipliers=[1.00,.63,.48,.36,.29]
+ rows=[]
+ for idx,(offset,mult) in enumerate(zip(offsets,multipliers)):
+  print_time=(now-timedelta(minutes=offset)).strftime("%I:%M %p")
+  price=etf_price*(1+(idx-2)*0.00045)
+  shares=max(10_000,int(largest_shares*mult))
+  premium=shares*price
+  level="Above" if price>=etf_price else "Below"
+  level_class="positive" if level=="Above" else "negative"
+  rows.append(
+   f'<div class="dp-print-row">'
+   f'<span>{print_time}</span><strong>{etf}</strong>'
+   f'<span>${price:,.2f}</span><span>{shares:,}</span>'
+   f'<span>${premium/1_000_000:,.1f}M</span>'
+   f'<span class="{level_class}">{level}</span></div>'
+  )
+
+ height_class="dp-expanded" if expanded else "dp-compact"
+ html=(
+  f'<div class="dark-pool-card {height_class}">'
+  f'<div class="top-card-header">'
+  f'<div><div class="top-card-title">◆ INSTITUTIONAL FLOW</div>'
+  f'<div class="top-card-subtitle">{etf} · {description} · follows {symbol}</div></div>'
+  f'<span class="dp-source-badge">ESTIMATED PROXY</span></div>'
+  f'<div class="dark-pool-body">'
+  f'<div class="dp-kpi-grid">'
+  f'<div class="dp-kpi"><span>Largest Print</span><strong>${largest_value/1_000_000:,.1f}M</strong></div>'
+  f'<div class="dp-kpi"><span>Dark-Pool Volume</span><strong>{dark_shares/1_000_000:,.1f}M</strong></div>'
+  f'<div class="dp-kpi"><span>DP Volume %</span><strong>{dp_pct:.1f}%</strong></div>'
+  f'<div class="dp-kpi"><span>Net Premium</span><strong class="{bias_class}">{format_currency_signed(net_premium)}</strong></div>'
+  f'<div class="dp-kpi"><span>Flow Bias</span><strong class="{bias_class}">{bias}</strong></div>'
+  f'</div>'
+  f'<div class="dp-table-head"><span>TIME</span><span>ETF</span><span>PRICE</span><span>SHARES</span><span>VALUE</span><span>LEVEL</span></div>'
+  f'<div class="dp-print-scroll">{"".join(rows)}</div>'
+  f'<div class="dp-disclaimer">Estimated institutional-flow proxy based on dashboard price, volatility, news sentiment and AI score. It is not exchange-reported dark-pool tape data.</div>'
+  f'</div></div>'
+ )
+ st.markdown(html,unsafe_allow_html=True)
+
+
 def risk():
- balance=25000.0; daily_pnl=1250.0; account_name="Demo fallback"
+ balance=25000.0
+ daily_pnl=1250.0
+ account_name="Demo fallback"
  if tradovate_snapshot and not tradovate_snapshot.get("error"):
   b=tradovate_snapshot.get("balance",{})
   balance=float(b.get("amount") or b.get("cashBalance") or b.get("totalCashValue") or balance)
   daily_pnl=float(b.get("realizedPnL") or 0)+float(b.get("openPnL") or 0)
   account_name=tradovate_snapshot.get("account",{}).get("name","Tradovate")
- st.markdown(f'<div class="panel bottom-card dashboard-bottom-card"><div class="panel-title">♙ RISK MANAGER · {account_name}</div><div class="muted">Account Balance</div>${balance:,.2f}<br><div class="muted">Daily P&L</div><span class="{"positive" if daily_pnl>=0 else "negative"}">${daily_pnl:,.2f}</span><br><div class="muted">Daily Loss Limit</div>$2,000.00<hr><div class="panel-title">POSITION SIZE</div><div class="muted">Risk per Trade</div>$500<br><div class="muted">Stop Loss</div>20 points<br><div class="muted">MES Contracts</div>5<br><div class="muted">Order execution</div><span class="warning">Disabled</span></div>',unsafe_allow_html=True)
+
+ pnl_class="positive" if daily_pnl>=0 else "negative"
+ html=f"""<div class="dashboard-unified-card risk-manager-card dashboard-bottom-card">
+ <div class="top-card-header unified-card-header">
+  <div class="top-card-title">♙ RISK MANAGER</div>
+  <div class="top-card-subtitle">{account_name}</div>
+ </div>
+ <div class="unified-card-body risk-card-body">
+  <div class="risk-stat">
+   <span class="risk-label">Account Balance</span>
+   <strong class="risk-value">${balance:,.2f}</strong>
+  </div>
+  <div class="risk-stat">
+   <span class="risk-label">Daily P&amp;L</span>
+   <strong class="risk-value {pnl_class}">${daily_pnl:,.2f}</strong>
+  </div>
+  <div class="risk-stat">
+   <span class="risk-label">Daily Loss Limit</span>
+   <strong class="risk-value">$2,000.00</strong>
+  </div>
+  <div class="unified-section-divider"></div>
+  <div class="unified-section-title">POSITION SIZE</div>
+  <div class="risk-mini-grid">
+   <div><span>Risk per Trade</span><strong>$500</strong></div>
+   <div><span>Stop Loss</span><strong>20 points</strong></div>
+   <div><span>MES Contracts</span><strong>5</strong></div>
+   <div><span>Order Execution</span><strong class="warning">Disabled</strong></div>
+  </div>
+ </div>
+ </div>"""
+ st.markdown(html,unsafe_allow_html=True)
 def perf():
  vals=[98000,99000,98500,99700,100300,99500,101000,101700,101200,102100,102400,102900,102700,103400,104100,104000,104900,105600,106200,107245]
  w,h=520,128;padx,pady=8,10
@@ -1480,18 +3069,23 @@ def perf():
  <polyline points="{poly}" fill="none" stroke="#36d66b" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
  <circle cx="{last_x}" cy="{last_y}" r="3.5" fill="#36d66b"/>
  </svg>"""
- html=f"""<div class="panel performance-card dashboard-bottom-card">
- <div class="panel-title">▥ PERFORMANCE OVERVIEW</div>
- <div class="performance-kpis">
-  <div class="performance-kpi"><span class="muted">Total Trades</span><span class="performance-value">28</span></div>
-  <div class="performance-kpi"><span class="muted">Win Rate</span><span class="performance-value positive">64.29%</span></div>
-  <div class="performance-kpi"><span class="muted">Profit Factor</span><span class="performance-value positive">2.18</span></div>
-  <div class="performance-kpi"><span class="muted">Total P&amp;L</span><span class="performance-value positive">$3,245</span></div>
-  <div class="performance-kpi"><span class="muted">Avg Win</span><span class="performance-value positive">$225.50</span></div>
-  <div class="performance-kpi"><span class="muted">Avg Loss</span><span class="performance-value negative">-$104.30</span></div>
+ html=f"""<div class="dashboard-unified-card performance-overview-card performance-card dashboard-bottom-card">
+ <div class="top-card-header unified-card-header">
+  <div class="top-card-title">▥ PERFORMANCE OVERVIEW</div>
+  <div class="top-card-subtitle">Live summary</div>
  </div>
- <div class="performance-chart">{svg}</div>
- <div class="performance-footer"><span class="muted">Max Drawdown <b class="negative">-$1,120</b></span><span>Monthly P&amp;L <b class="positive">+$3,245</b></span></div>
+ <div class="unified-card-body performance-card-body">
+  <div class="performance-kpis">
+   <div class="performance-kpi"><span class="muted">Total Trades</span><span class="performance-value">28</span></div>
+   <div class="performance-kpi"><span class="muted">Win Rate</span><span class="performance-value positive">64.29%</span></div>
+   <div class="performance-kpi"><span class="muted">Profit Factor</span><span class="performance-value positive">2.18</span></div>
+   <div class="performance-kpi"><span class="muted">Total P&amp;L</span><span class="performance-value positive">$3,245</span></div>
+   <div class="performance-kpi"><span class="muted">Avg Win</span><span class="performance-value positive">$225.50</span></div>
+   <div class="performance-kpi"><span class="muted">Avg Loss</span><span class="performance-value negative">-$104.30</span></div>
+  </div>
+  <div class="performance-chart">{svg}</div>
+  <div class="performance-footer"><span class="muted">Max Drawdown <b class="negative">-$1,120</b></span><span>Monthly P&amp;L <b class="positive">+$3,245</b></span></div>
+ </div>
  </div>"""
  st.markdown(html,unsafe_allow_html=True)
 def journal():
@@ -1501,8 +3095,12 @@ if page=='Dashboard':
  score_card=f'<div class="panel market-score-card"><div class="panel-title">AI MARKET SCORE</div><div class="score warning">{ai_result.score}</div><div class="score-sub">/100</div><div class="score-label positive">{ai_result.label.upper()}</div><div class="score-sub muted">Confidence: {ai_result.confidence}%</div></div>'
  st.markdown(f'<div class="top-market-grid">{cards}{score_card}</div>',unsafe_allow_html=True)
  left,right=st.columns([2.35,1.15])
- with left: chart()
- with right: brief()
+ with left:
+  chart()
+ with right:
+  brief()
+  st.markdown('<div class="dashboard-card-gap"></div>',unsafe_allow_html=True)
+  dark_pool_card(expanded=False)
  if streamlit_js_eval is not None:
   try:
    detected_tz=streamlit_js_eval(
@@ -1566,6 +3164,11 @@ elif page=='Economic Calendar':
 
 elif page=='News & Sentiment':
  news()
+
+elif page=='Institutional Flow':
+ st.markdown('## Institutional Flow')
+ st.caption('ETF-based institutional-flow proxy synchronized with the Hybrid Market Chart ticker.')
+ dark_pool_card(expanded=True)
 
 elif page=='AI Trade Setup':
  st.markdown('<div class="ai-bottom-anchor"></div>',unsafe_allow_html=True)
